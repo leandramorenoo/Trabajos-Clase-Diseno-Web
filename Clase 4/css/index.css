@@ -1,0 +1,27 @@
+h1, h2 {
+    display: inline;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards {
+    padding: 48px 0;
+}
+.cards__block {
+    max-width: 1328px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+}
+.cards__card {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    
+}
