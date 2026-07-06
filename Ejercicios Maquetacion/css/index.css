@@ -31,6 +31,7 @@
     display: flex;
     gap: 48px;
     align-items: center;
+    flex-wrap: wrap;
 
 
 }
@@ -89,6 +90,7 @@
     gap: 16px;
     padding: 16px;
     max-width: 920px;
+    flex-wrap: wrap;
 
     margin: 0 auto;
 }
@@ -97,6 +99,8 @@
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+
+    flex: 1 1 250px;
 
 }
 
@@ -142,6 +146,7 @@ a {
 
 .c {
     padding: 48px 0;
+    background-color: #fbfbfb;
 }
 .c__block {
     display: flex;
@@ -158,6 +163,7 @@ a {
     display: flex;
     gap: 16px;
     padding: 16px 0;
+    flex-wrap: wrap;
 
 }
 .c__card {
@@ -165,6 +171,8 @@ a {
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+
+    flex: 1 1 310px;
 
 }
 
@@ -174,4 +182,249 @@ a {
    padding: 16px 32px;
    border-radius: 50px;
    text-decoration: none;
+}
+
+/*MI INTENTO D
+
+.d {
+    background-color: #fbfbfb;
+    padding: 48px 0;
+    gap: 10px;
+}
+
+.d__block {
+    padding: 16px;
+    gap: 32px;
+   
+}
+.d__title {
+    display: flex;
+    justify-content: space-between;
+}
+.d__cards {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+}
+.d__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.d__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_2 {
+    color: black;
+    text-decoration: none;
+}*/
+
+.d {
+    padding: 48px 0;
+    gap: 10px;
+    background-color: #fbfbfb;
+}
+
+.d__block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+
+    max-width: 920px;
+    margin: 0 auto;
+    
+}
+.d__head {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.d__content {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    flex-wrap: wrap;
+}
+.d__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+
+    flex: 1 1 310px;
+}
+.d__foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.d__foot h3 {
+    flex: 1 1 310px;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*MI INTENTO E*/
+
+.e {
+    padding: 48px 0;
+    gap: 40px;
+    background-color: #fbfbfb;
+
+}
+.e__block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 48px;
+
+    max-width: 920px;
+    margin: 0 auto;
+
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+
+.e__img {
+    width: 888px;
+    height: 333px;
+}
+.e__content {
+    padding: 16px;
+    gap: 16px;
+    
+    
+}
+.e__paragraph {
+    display: flex;
+    padding: 16px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+
+}
+
+.e__paragraph p {
+    flex: 1 1 310px;
+}
+
+/*BLOQUE F*/
+
+/**.f {
+    padding: 48px 0;
+    gap: 40px;
+    background-color: #fbfbfb;
+}
+.f__block {
+    padding: 16px;
+    gap: 48px;
+    max-width: 920px;
+    margin: 0 auto;
+
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+.f__img{
+    gap: 16px;
+    display: flex;
+
+    flex: 1 1 310px;
+
+}
+
+.f__content {
+    padding: 16px;
+    gap: 16px;
+
+}
+.f__paragraph {
+    display: flex;
+    padding: 16px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.f__paragraph p {
+    flex: 1 1 310px;
+}
+.f__info {
+    display: flex;
+    padding: 16px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+    justify-content: space-around;
+}
+
+.f__info p {
+    flex: 1 1 310px;
+
+}
+
+.f__info a {
+    flex: 1 1 310px;
+    
+}**/
+
+
+.f {
+  padding: 48px 0;  
+  background-color: #fbfbfb;
+}
+.f__block {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 16px;
+
+}
+.f__images {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.f__images div {
+    flex: 1 1 320px;
+}
+.f__content {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 16px; 
+}
+.f__paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    
+}
+
+.f__paragraph p, .f__paragraph a {
+    flex: 1 1 320px;
+}
+
+.f__paragraph a {
+    text-align: center;
 }
