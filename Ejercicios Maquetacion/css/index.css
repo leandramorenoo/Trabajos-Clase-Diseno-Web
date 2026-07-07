@@ -15,24 +15,26 @@
 
 /* /Reset*/
 
-
-/* Block A */
-
-.a {
+.section {
     padding: 48px 0;
     background-color: #fbfbfb;
-
 }
 
-.a__block {
+.block {
     max-width: 920px;
     margin: 0 auto;
     padding: 16px;
     display: flex;
+
+}
+
+/* Block A */
+
+.a__block {
+    
     gap: 48px;
     align-items: center;
     flex-wrap: wrap;
-
 
 }
 .a__img {
@@ -79,20 +81,11 @@
 
 /** Bloque B**/
 
-.b {
-
-    padding: 48px;
-    background-color: #fbfbfb;
-
-}
 .b__block {
-    display: flex;
+    
     gap: 16px;
-    padding: 16px;
-    max-width: 920px;
     flex-wrap: wrap;
 
-    margin: 0 auto;
 }
 .b__card {
     display: flex;
@@ -144,18 +137,10 @@ a {
    text-decoration: none;
 } */
 
-.c {
-    padding: 48px 0;
-    background-color: #fbfbfb;
-}
 .c__block {
-    display: flex;
+
     flex-direction: column;
     gap: 32px;
-    padding: 16px;
-
-    max-width: 920px;
-    margin: 0 auto;
     align-items: start;
 
 }
@@ -182,6 +167,11 @@ a {
    padding: 16px 32px;
    border-radius: 50px;
    text-decoration: none;
+}
+
+.btn--light {
+    background-color: #ffffff;
+    color: black;
 }
 
 /*MI INTENTO D
@@ -223,20 +213,11 @@ a {
     text-decoration: none;
 }*/
 
-.d {
-    padding: 48px 0;
-    gap: 10px;
-    background-color: #fbfbfb;
-}
-
 .d__block {
-    display: flex;
     flex-direction: column;
     gap: 32px;
     padding: 16px;
 
-    max-width: 920px;
-    margin: 0 auto;
     
 }
 .d__head {
@@ -278,21 +259,11 @@ a {
 
 /*MI INTENTO E*/
 
-.e {
-    padding: 48px 0;
-    gap: 40px;
-    background-color: #fbfbfb;
 
-}
 .e__block {
-    display: flex;
+
     flex-direction: column;
-    padding: 16px;
     gap: 48px;
-
-    max-width: 920px;
-    margin: 0 auto;
-
     justify-content: space-between; 
     align-items: center; 
     
@@ -383,14 +354,8 @@ a {
 }**/
 
 
-.f {
-  padding: 48px 0;  
-  background-color: #fbfbfb;
-}
 .f__block {
-    max-width: 920px;
-    margin: 0 auto;
-    display: flex;
+
     flex-direction: column;
     gap: 48px;
     padding: 16px;
@@ -427,4 +392,45 @@ a {
 
 .f__paragraph a {
     text-align: center;
+}
+
+/*MI INTENTO G*/
+
+
+.g__block {
+    
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+.g__content {
+    padding: 16px 0;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.g__card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+
+    gap: 16px;
+    padding: 32px;
+    background-color: #f0f0f0;
+
+}
+
+.g__card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.g__foot {
+    display: flex;
+    padding: 16px 0;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
