@@ -5,7 +5,7 @@
     --color-light:#F3F3F3;
 
     /* Fonts */
-    --font-title-xl: 400 clamp(48px, 5vw, 64px) "Hedvig Letters Serif", serif;
+    --font-title-xl: 400 clamp(48px, 5vw, 64px) "Hedvig Letters Serif", serif; /*Clamp es (min, lo que se adpata, max)*/
     --font-title-lg: 400 clamp(24px, 5vw, 32px) "Hedvig Letters Serif", serif;
     --font-title-md: 400 clamp(19px, 5vw, 24px) "Hedvig Letters Serif", serif;
     --font-title-sm: 500 clamp(17px, 5vw, 19px) "Instrument Sans", sans-serif;
@@ -15,7 +15,7 @@
 
     /* Size */
     --size-max-width: 964px;
-    --size-max-width-xl: 2300px;
+    --size-max-width-xl: 1440px;
 
     --size-min-width:320px; /*media de telefonos */
 
@@ -88,6 +88,7 @@ h4, .title-sm {
 .section {
     padding: var(--spacing-xl) var(--spacing-md);
     max-width: var(--size-max-width);
+    margin: 0 auto;
     
 }
 
@@ -142,7 +143,11 @@ nav {
     color: var(--color-light);
 }
 .hero__image {
-    background-color: var(--color-dark);
+    background: linear-gradient(7deg,rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0) 100%), url('../Media/Home-banner.webp');
+    background-position: center center;
+    background-size: cover; /*Idealmente cover para cubrir todo*/
+    background-repeat: no-repeat; /*IMPORTANTE*/
+
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -165,7 +170,7 @@ nav {
     display: flex;
     align-items: center;
     gap: var(--spacing-xl);
-    padding: var(--spacing-xl);
+    flex-wrap: wrap;
 }
 .about__image {
     flex: 1 1 var(--size-min-width);
@@ -187,7 +192,80 @@ nav {
     }
 }
 
-
 /* / About */
 
+/* Features */
 
+.feautures__block {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.feautures__card {
+    padding: var(--spacing-md);
+    flex: 1 1 210px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.feautures__card-head {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+/* / Features */
+
+/* Services */
+
+.services__block{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    align-items: start;
+}
+.services__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--size-min-width), 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    flex-wrap: wrap;
+}
+.services__card {
+    flex: 1 1 var(--size-min-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* /Services */
+
+/* News */
+
+.news__block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+.news__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.news__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: var(--spacing-sm);
+    
+}
+.news__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+
+}
+/* / News */
