@@ -19,7 +19,7 @@ div {
 
     &.pepe {
         background-color: aquamarine;
-        grid-column: span 2; /*qu ocupe dos espacios*/
+        grid-column: span 2; /* span para indicar que ocupe dos espacios*/
         grid-row: 3 /4; 
         grid-area: ;
     }
