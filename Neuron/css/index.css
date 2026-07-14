@@ -98,6 +98,17 @@ h4, .title-sm {
     margin: 0 auto;
     
 }
+.form-row {
+
+}
+
+.form-field {
+
+}
+.form-field--acceptance {
+
+}
+
 
 .btn {
     display: inline-block;
@@ -113,6 +124,10 @@ h4, .title-sm {
     &.btn--dark { /*Opcion de boton 2*/
         color: var(--color-light);
         background-color: var(--color-dark);
+    }
+
+    &.btn--blue {
+
     }
 }
 
@@ -315,6 +330,56 @@ nav {
 
 
 /* /Prices */
+
+/* MI INETENTO CONTACT 
+
+.contact__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-xxl);
+    align-self: stretch;
+}
+.contact__map {
+
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+
+}*/
+
+/* Contact */
+
+.contact_content {
+    
+}
+.contact__block {
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+.contact_map {
+    flex: 3 1 var(--size-min-width);
+}
+.contact_content {
+    flex: 1 1 var(--size-min-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+
+}
+.form-field {
+
+}
+.form-field--acceptance {
+
+}
+.btn btn--blue {
+
+}
+
+/* /Contact */
 
 /* News */
 

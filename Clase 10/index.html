@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 10</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="
+    https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css
+    " rel="stylesheet">
+  </head>
+  <body>
+    
+    <!--FORMULARIO PRUEBA-->
+    <!--<form action="#" method="POST">
+      <div class="form_field">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Tu nombre"
+          name="name"
+          required
+        />
+        <input type="submit" name="name" value="Pepe" id="Enviar" />
+      </div>
+
+      <div class="form_div">
+        <label for="Subject">Subject</label>
+        <select name="subject" id="subject">
+          <option value="none" disabled>--Select an option--</option>
+          <option value="option_1">Option 1</option>
+          <option value="option_2">Option 2</option>
+          <option value="option_3">Option 3</option>
+        </select>
+      </div>
+
+      <div class="form_div">
+        <label for="content">Content</label>
+        <textarea name="content" id="content"></textarea>
+      </div>
+    </form>-->
+
+    <!--FORMULARIO EJEMPLO-->
+
+    <form class="reservation" action="#" method="GET">
+
+        <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Name">
+        </div>
+
+        <div class="field">
+            <label for="surname">Surname</label>
+            <input id="surname" name="surname" type="text" placeholder="Surname">
+        </div>
+
+        <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email">
+        </div>
+
+        <fieldset>
+            <legend>Reservation</legend>
+            <div class="field">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date">
+            </div>
+
+            <div class="field">
+                <label for="hour">Hour</label>
+                <input id="hour" name="hour" type="time">
+            </div>
+        </fieldset>
+
+        <div class="field field--acceptance">
+            <input name="acceptance" id="acceptance" required type="checkbox">
+            <label for="acceptance">He leido y acepto las politicas de privacidad.</label>   
+        </div>
+
+        <button class="form__submit" type="submit">
+            Send
+            <i class="ri-mail-line"></i>
+        </button>
+
+    </form>
+
+  </body>
+</html>
+

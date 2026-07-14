@@ -1,0 +1,57 @@
+/* Reset */
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* /Reset */
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 48px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+
+    &.field--acceptance {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+fieldset {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+label:not([for="acceptance"]) {
+    display: none;
+}
+
+.form__submit {
+    padding: 10px;
+    background-color: rgb(63, 61, 168);
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+
+
+}
+
