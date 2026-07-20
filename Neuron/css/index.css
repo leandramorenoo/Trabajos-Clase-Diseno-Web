@@ -7,33 +7,33 @@
     --color-error: #E26868;
 
     /* Fonts */
-    --font-title-xl: 400 clamp(48px, 5vw, 64px) "Hedvig Letters Serif", serif;
+    --font-title-xl: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif", serif;
     /*Clamp es (min, lo que se adpata, max)*/
-    --font-title-lg: 400 clamp(24px, 5vw, 32px) "Hedvig Letters Serif", serif;
-    --font-title-md: 400 clamp(19px, 5vw, 24px) "Hedvig Letters Serif", serif;
-    --font-title-sm: 500 clamp(17px, 5vw, 19px) "Instrument Sans", sans-serif;
+    --font-title-lg: 400 clamp(1.5rem, 5vw, 32px) "Hedvig Letters Serif", serif;
+    --font-title-md: 400 clamp(1.1875rem, 5vw, 1.5rem) "Hedvig Letters Serif", serif;
+    --font-title-sm: 500 clamp(1.0625rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
 
     --font-body: 400 15px "Instrument Sans", sans-serif;
     --font-link: 500 15px "Instrument Sans", sans-serif;
 
     /* Size */
 
-    --size-icon-md: 24px;
+    --size-icon-md: 1.5rem;
 
-    --size-max-width: 964px;
-    --size-max-width-xl: 1440px;
+    --size-max-width: 60.25rem;
+    --size-max-width-xl: 90rem;
 
-    --size-min-width-sm: 210px;
-    --size-min-width: 320px;
+    --size-min-width-sm: 13.125rem;
+    --size-min-width: 20rem;
     /*media de telefonos */
 
 
     /* Spacing*/
-    --spacing-xxl: 64px;
-    --spacing-xl: 48px;
-    --spacing-lg: 32px;
-    --spacing-md: 16px;
-    --spacing-sm: 10px;
+    --spacing-xxl: 4rem;
+    --spacing-xl: 3rem;
+    --spacing-lg: 2rem;
+    --spacing-md: 1rem;
+    --spacing-sm: .625rem;
 
     /* Shadow */
 
@@ -48,6 +48,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -195,7 +196,7 @@ header {
 }
 
 .logo {
-    max-width: 92px;
+    max-width: 5.75rem;
     border-radius: 0;
 }
 
@@ -215,6 +216,19 @@ nav {
     padding: 0 var(--spacing-sm);
     color: var(--color-light);
     margin: 0 auto;
+
+    &.hero--small {
+
+        & .hero__image {
+            min-height: 40vh;
+            align-items: center;   
+        }
+
+        & .hero__block {
+            align-items: center;
+        }
+
+    }
 }
 
 .hero__image {
@@ -231,6 +245,38 @@ nav {
     align-items: stretch;
     justify-content: center;
     border-radius: var(--radius-sm);
+
+    &.hero__image--services {
+        background: linear-gradient(7deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0) 100%), url('../Media/Services-banner.webp');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &.hero__image--about {
+        background: linear-gradient(7deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0) 100%), url('../Media/About-banner.webp');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &.hero__image--news {
+        background: linear-gradient(7deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0) 100%), url('../Media/News-banner.webp');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &.hero__image--contact {
+        background: linear-gradient(7deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0) 100%), url('../Media/Contact-banner.webp');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
 }
 
 .hero__block {
@@ -289,6 +335,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+
 }
 
 .feautures__card-head {
@@ -545,3 +592,36 @@ footer {
 }
 
 /* / FOOTER */
+
+
+
+
+/* 
+Unidades absolutas
+-cm
+-mm
+-px * border (solo en unidades pequeñas)
+-pt
+-in
+
+Unidades relativas
+-vw **
+-vh - relativo a la ventana **
+- % - relativo al contenedor **
+- fr 
+- em - relativo al contenedor mas cercano, guarda proporciones **
+- rem (root)- relativo al html **
+- ch (0) - caracteres 
+
+
+*/
+
+
+/* ABOUT US */
+
+.text__block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
