@@ -24,6 +24,7 @@ section.main {
 }
 
 .block {
+    width: 100%;
     max-width: 500px;
     background-color: white;
     margin: 0 auto;
@@ -97,7 +98,7 @@ section.main {
     }
 
 }
-
+/*
 .block.items {
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@ section.main {
        
     }
     
-}
+}*/
 
 .block.tabs {
     display: flex;
@@ -126,14 +127,14 @@ section.main {
 
 }
 
-.tabs {
+.tab {
     background-color: #f4f4f4;
     padding: 10px;
 
     transition: background-color 300ms, color 300ms;
 
     &:hover {
-        background-color: #f6f6f6;
+        background-color: #d6d6d6;
     }
 
     &:active {
@@ -146,7 +147,7 @@ section.main {
 .tab__content {
     display: none;
 
-    &#item-1:target, &#item-2:target &#item-3:target &#item-4:target {
+    &#item-1:target, &#item-2:target, &#item-3:target {
         display: block;
     }
 }

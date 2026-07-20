@@ -325,6 +325,7 @@ nav {
 .feautures__block {
     display: flex;
     flex-wrap: wrap;
+    gap: var(--spacing-md);
 
 }
 
@@ -335,6 +336,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+    background-color: var(--color-light);
+     border-radius: var(--radius-sm);
 
 }
 
@@ -624,4 +627,6 @@ Unidades relativas
     flex-direction: column;
     gap: var(--spacing-lg);
 }
+
+
 
