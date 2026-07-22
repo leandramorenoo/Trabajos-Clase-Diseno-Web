@@ -1,0 +1,332 @@
+/*@media (width > 640px) {
+
+}
+
+@media (max-width: 640px) { /*para pantallas inferiores a 640
+
+}
+
+div {
+    container-type: inline-size;
+    container-name: content; 
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax (320px, 1fr)); /* auto-fit que coloque las que quiera, y de colomnas que minimo 32o pero max las que pueda
+}*/
+
+
+/*section {
+    background-color: black;
+    border-radius: .625rem;
+
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    position: relative;
+    min-height: 500px;
+    align-items: start;
+}
+
+div {
+    background-color: white;
+    border-radius: .625rem;
+    min-height: 100px;
+    min-width: 100px;
+    flex: 1 1 0;
+
+    &:nth-child(2) {
+        background-color: aqua;
+        position: absolute;
+        right: 0rem; /* offset 
+        bottom: -1rem; /* offset 
+        z-index: 1;
+    }
+
+    &:nth-child(2) {
+        background-color: aqua;
+        position: sticky;
+        right: 0rem; /* offset 
+        bottom: -1rem; /* offset 
+        z-index: 1;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 1 rem;
+    right: 1rem;
+
+    background-color: #1f1f1f1f;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+
+section {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.left {
+    flex: 1 1  240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}*/
+
+@keyframes letter-up {
+    0% {transform: translateY(0rem);}
+    100% {transform: translateY(.3rem);}
+
+}
+
+@keyframes letter-down {
+    0% {transform: translateY(0rem);}
+    100% {transform: translateY(-.3rem);}
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+
+    
+}
+
+section {
+    background-color:beige;
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    min-height: 200px;
+    margin-bottom: 7rem;
+}
+
+.block-1 {
+    background-color:rgb(101, 152, 228);
+    border-radius: 1rem;
+    min-height: 100px;
+    min-width: 100px;
+    flex: 1 1 0;
+
+    &:nth-child(2) {
+        background-color: pink; 
+        position: relative;
+        top: 70px;
+    }
+}  
+
+.block-2 {
+    background-color:rgb(101, 152, 228);
+    border-radius: 1rem;
+    min-height: 100px;
+    min-width: 100px;
+    flex: 1 1 0;
+    position: relative;
+
+    &:nth-child(2) {
+        background-color: pink; 
+        position: absolute;
+        height: 170px;
+        
+    }
+} 
+
+.block-3 {
+    background-color:rgb(101, 152, 228);
+    border-radius: 1rem;
+    min-height: 100px;
+    min-width: 100px;
+    flex: 1 1 0;
+    position: relative;
+
+    &:nth-child(2) {
+        background-color: pink; 
+        position: fixed;
+        top: 0;
+        right: 0rem;
+        
+    }
+} 
+
+
+.block {
+    
+    border-radius: 1rem;
+    height: 500px;
+
+    & .block-4 {
+        background-color:rgb(101, 152, 228);
+        border-radius: 1rem;
+        height: 100px;
+        width: 100px;
+        flex: 1 1 0;
+        position: relative;
+
+
+        &:nth-child(2) {
+        background-color: pink; 
+        position: sticky;
+        top: 0;      
+    }
+    }
+
+}
+
+
+.block-5 {
+    background-color:rgb(101, 152, 228);
+    border-radius: 1rem;
+    min-height: 100px;
+    flex: 1 1 0;
+
+    /* CONFIGURAR LA ANIMACIÓN
+    animation-name: pelota;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+
+    /* INFINITO PINGPONG 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    /* UNA VEZ
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+
+    animation: pelota 2s linear 1s 1 forwards;
+    
+
+    &:nth-child(1) {
+        transition: transform 500ms;
+
+        &:hover {
+            transform: translateY(1rem);
+        }
+        
+    }
+
+    &:nth-child(2) {
+        background-color: pink; 
+        transform: translateY(0rem);
+        transition: transform 500ms;
+
+        &:hover {
+            /*transform: translateY(1rem);*/
+            transform: rotate(90deg);  
+        }
+        
+    }
+
+     &:nth-child(3) {
+        transition: transform 500ms;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+        
+    }
+} 
+
+.block-6 {
+
+    border-radius: 1rem;
+    flex: 1 1 0;
+    
+
+    animation: carga 2s linear 1s 1 forwards;
+
+    &:nth-child(1) {
+        background-color:rgb(109, 101, 228);
+        transition: transform 500ms;
+
+        &:hover {
+            transform: translateY(1rem);
+        }
+        
+    }
+
+    &:nth-child(2) {
+        background-color: rgb(177, 73, 91); 
+        transform: translateY(0rem);
+        transition: transform 500ms;
+
+        &:hover {
+            /*transform: translateY(1rem);*/
+            transform: rotate(90deg);  
+        }
+        
+    }
+}
+
+/*@keyframes pelota {
+    0% {background-color: rebeccapurple;}
+    50% {background-color: red;}
+    100% {background-color: blue;}
+}
+
+@keyframes carga {
+    0% {background-color: blue;}
+    25% {}
+
+}*/
+
+
+
+
+h1 {
+     & span {
+        display: inline-block;
+     }
+
+    & span:nth-child(even) {
+        animation: letter-up 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    & span:nth-child(odd) {
+        animation: letter-up 5s ubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+}
+
+
+
+.text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
