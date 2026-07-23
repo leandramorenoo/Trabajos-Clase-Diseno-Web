@@ -1,0 +1,124 @@
+/** {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 300vh;
+}
+section {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(26, 62, 52);
+    position: sticky;
+    top: 0rem;
+}
+
+div {
+    flex: 1 1 0;
+    min-height: 100px;
+    min-width: 100px;
+    background-color: rgb(253, 241, 215);
+
+    /* POSICION RELATIVA
+    &.juan {
+        background-color: palegreen;
+        position:relative;
+        top: 2rem; /* Offset
+        right: 2rem; /* Offset
+
+    }*/
+
+    /* POSICION ABSOLUTA
+    &.juan {
+        background-color: palegreen;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem; 
+
+    }*/
+
+    /* POSICION FIJA
+    &.juan {
+        background-color: palegreen;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem; 
+    }*/
+
+    /* POSICION STICKY
+    &.juan {
+        background-color: palegreen;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem; 
+    }
+}*/
+
+@keyframes ball {
+    0% {transform: translateY(0rem);}
+    20% {transform: translateY(15rem);}
+    40% {
+        transform: translateY(-15rem);
+        border-radius: 5px;
+    }
+    60% {
+        transform: translateY(0rem) rotate(90deg);
+        border-radius: 5px;
+    }
+    80% {
+        transform: translateY(0rem);
+        border-radius: 5px;
+        background-color: rgb(116, 132, 12);
+    }
+    100% {
+        transform: translateY(0rem);
+
+    }
+}
+
+@keyframes fondo {
+    0% {background-color: rgb(26, 62, 52);}
+    20% { background-color: rgb(26, 62, 52);}
+    40% {background-color: rgb(26, 62, 52);}
+    60% {background-color: rgb(108, 165, 238);}
+    80% {background-color: rgb(108, 165, 238);}
+    100% {background-color: rgb(26, 62, 52);}
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 62, 52);
+
+    animation: fondo 3s cubic-bezier(1, 0, 0, 1) infinite forwards;
+
+
+}
+
+div {
+
+    flex: 1 1 0;
+    background-color: pink;
+    min-height: 80px;
+    min-width: 80px;
+    margin: 18rem;
+    border-radius: 100px;
+
+    animation: ball 3s cubic-bezier(1, 0, 0, 1) infinite forwards ;
+
+
+}
