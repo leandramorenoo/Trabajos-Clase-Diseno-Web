@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nido de Letras, recomendaciones y libros para disfrutar." />
+    <title>Nido de Letras — Libros que se quedan contigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="announcement-bar"><p class="announcement-bar__text">Envíos gratis en pedidos superiores a 30€ <span>·</span> Un regalo para tu próxima lectura</p></div>
+
+    <header class="header">
+      <a class="brand" href="#inicio" aria-label="Nido de Letras, inicio">
+        <span class="brand__mark">N</span><span class="brand__name">Nido <em>de</em> Letras</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav__link nav__link--active" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#recomendados">Recomendados</a>
+        <a class="nav__link" href="#blog">El blog</a>
+        <a class="nav__link" href="#libreria">Librería</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-button" type="button" aria-label="Buscar" data-search-button>⌕</button>
+        <button class="icon-button icon-button--heart" type="button" aria-label="Ver favoritos">♡<span class="icon-button__counter" data-favorite-counter>0</span></button>
+        <button class="cart-button" type="button" data-cart-button><span>Bolsa</span><span class="cart-button__count" data-cart-count>0</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content">
+          <p class="eyebrow">Un lugar para lectores curiosos</p>
+          <h1 class="hero__title">Historias que<br /><em>iluminan</em> los días.</h1>
+          <p class="hero__text">Descubre tu próxima lectura entre recomendaciones cuidadas, novedades literarias y los libros que más nos inspiran.</p>
+          <div class="hero__buttons">
+            <a class="button button--primary" href="#recomendados">Explorar libros <span>→</span></a>
+            <a class="button button--text" href="#blog">Visitar el blog <span>↗</span></a>
+          </div>
+          <div class="hero__readers"><div class="hero__avatars"><img src="https://i.pravatar.cc/72?img=47" alt="" /><img src="https://i.pravatar.cc/72?img=32" alt="" /><img src="https://i.pravatar.cc/72?img=25" alt="" /></div><p>Únete a <strong>12.000 lectores</strong><br />que ya encontraron su historia.</p></div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__sun"></div>
+          <div class="hero__arch"><img src="https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=1000&q=85" alt="Una mujer leyendo junto a una ventana" /></div>
+          <div class="hero__card"><span class="hero__card-icon">✦</span><p>Lecturas para<br /><strong>vivir despacio</strong></p></div>
+          <p class="hero__quote">“Un libro debe ser el hacha<br />que rompa el mar helado<br />dentro de nosotros.”</p>
+        </div>
+      </section>
+
+      <section class="categories section">
+        <div class="categories__intro"><p class="eyebrow">Encuentra tu lugar</p><h2 class="section-title">¿Qué te apetece<br /><em>leer hoy?</em></h2></div>
+        <div class="categories__grid">
+          <a class="category-card category-card--fiction" href="#libreria"><span class="category-card__number">01</span><span class="category-card__title">Novela<br />contemporánea</span><span class="category-card__arrow">→</span></a>
+          <a class="category-card category-card--essay" href="#libreria"><span class="category-card__number">02</span><span class="category-card__title">Ensayo &<br />pensamiento</span><span class="category-card__arrow">→</span></a>
+          <a class="category-card category-card--poetry" href="#libreria"><span class="category-card__number">03</span><span class="category-card__title">Poesía<br />para sentir</span><span class="category-card__arrow">→</span></a>
+          <a class="category-card category-card--mystery" href="#libreria"><span class="category-card__number">04</span><span class="category-card__title">Misterio &<br />thriller</span><span class="category-card__arrow">→</span></a>
+        </div>
+      </section>
+
+      <section class="book-section section" id="recomendados">
+        <div class="section-heading"><div><p class="eyebrow">Selección de la casa</p><h2 class="section-title">Nuestros <em>favoritos</em></h2></div><a class="link-arrow" href="#libreria">Ver todos <span>→</span></a></div>
+        <div class="books-grid">
+          <article class="book-card"><div class="book-card__image"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=85" alt="Portada del libro Las gratitudes" /><button class="book-card__favorite" aria-label="Añadir Las gratitudes a favoritos" data-favorite>♡</button><span class="book-card__tag">RECOMENDADO</span></div><p class="book-card__author">DELPhine de Vigan</p><h3 class="book-card__title">Las gratitudes</h3><div class="book-card__bottom"><span class="book-card__price">18,90 €</span><button class="book-card__add" type="button" data-add-to-cart>Añadir <span>+</span></button></div></article>
+          <article class="book-card"><div class="book-card__image"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=85" alt="Portada del libro La vida invisible de Addie LaRue" /><button class="book-card__favorite" aria-label="Añadir La vida invisible de Addie LaRue a favoritos" data-favorite>♡</button></div><p class="book-card__author">V. E. SCHWAB</p><h3 class="book-card__title">La vida invisible<br />de Addie LaRue</h3><div class="book-card__bottom"><span class="book-card__price">22,90 €</span><button class="book-card__add" type="button" data-add-to-cart>Añadir <span>+</span></button></div></article>
+          <article class="book-card"><div class="book-card__image"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=85" alt="Portada del libro La ridícula idea de no volver a verte" /><button class="book-card__favorite" aria-label="Añadir La ridícula idea de no volver a verte a favoritos" data-favorite>♡</button><span class="book-card__tag book-card__tag--light">NOVEDAD</span></div><p class="book-card__author">ROSA MONTERO</p><h3 class="book-card__title">La ridícula idea de no<br />volver a verte</h3><div class="book-card__bottom"><span class="book-card__price">19,50 €</span><button class="book-card__add" type="button" data-add-to-cart>Añadir <span>+</span></button></div></article>
+          <article class="book-card"><div class="book-card__image"><img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=85" alt="Portada del libro La librería" /><button class="book-card__favorite" aria-label="Añadir La librería a favoritos" data-favorite>♡</button></div><p class="book-card__author">PENELOPE FITZGERALD</p><h3 class="book-card__title">La librería</h3><div class="book-card__bottom"><span class="book-card__price">16,95 €</span><button class="book-card__add" type="button" data-add-to-cart>Añadir <span>+</span></button></div></article>
+        </div>
+      </section>
+
+      <section class="best-sellers section" id="libreria">
+        <div class="best-sellers__cover"><div class="best-sellers__cover-label">Los más<br />queridos</div></div>
+        <div class="best-sellers__content"><p class="eyebrow">La lista de este mes</p><h2 class="section-title">Los más<br /><em>vendidos</em></h2><p class="best-sellers__text">Esos títulos que pasan de mano en mano, se recomiendan en voz baja y encuentran siempre un hueco en la mesilla.</p><ol class="ranking"><li class="ranking__item"><span class="ranking__number">01</span><div><h3>El infinito en un junco</h3><p>Irene Vallejo</p></div><span class="ranking__price">24,90 €</span><button data-add-to-cart aria-label="Añadir El infinito en un junco">+</button></li><li class="ranking__item"><span class="ranking__number">02</span><div><h3>La mala costumbre</h3><p>Alana S. Portero</p></div><span class="ranking__price">20,90 €</span><button data-add-to-cart aria-label="Añadir La mala costumbre">+</button></li><li class="ranking__item"><span class="ranking__number">03</span><div><h3>Los días perfectos</h3><p>Jacobo Bergareche</p></div><span class="ranking__price">18,90 €</span><button data-add-to-cart aria-label="Añadir Los días perfectos">+</button></li></ol><a class="button button--dark" href="#recomendados">Descubrir la librería <span>→</span></a></div>
+      </section>
+
+      <section class="journal section" id="blog"><div class="section-heading"><div><p class="eyebrow">Apuntes de lectura</p><h2 class="section-title">Desde el <em>blog</em></h2></div><a class="link-arrow" href="#blog">Todos los artículos <span>→</span></a></div><div class="journal__grid"><article class="post-card post-card--featured"><img src="https://images.unsplash.com/photo-1474932430478-367dbb6832c1?auto=format&fit=crop&w=1000&q=85" alt="Interior acogedor de una librería" /><div class="post-card__overlay"><p>Rincones con alma</p><h3>Librerías que merece la pena visitar sin prisa</h3><a href="#blog">Leer artículo <span>→</span></a></div></article><article class="post-card"><img src="https://images.unsplash.com/photo-1455885666463-439c27a4c079?auto=format&fit=crop&w=800&q=85" alt="Persona leyendo un libro al aire libre" /><p class="post-card__category">LISTAS PARA GUARDAR</p><h3>7 novelas breves para una tarde sin planes</h3><a href="#blog" class="link-arrow">Leer más <span>→</span></a></article><article class="post-card"><img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=800&q=85" alt="Libros sobre una cama junto a una taza" /><p class="post-card__category">CLUB DE LECTURA</p><h3>Lecturas para conversar, sentir y volver a mirar</h3><a href="#blog" class="link-arrow">Leer más <span>→</span></a></article></div></section>
+
+      <section class="newsletter"><div><p class="eyebrow">Una carta al mes</p><h2>Lecturas para<br /><em>quedarse.</em></h2></div><form class="newsletter__form" data-newsletter><label class="sr-only" for="email">Tu correo electrónico</label><input id="email" type="email" placeholder="Tu correo electrónico" required /><button type="submit">Suscribirme <span>→</span></button><p data-newsletter-message>Sin ruido. Solo libros, ideas bonitas y alguna sorpresa.</p></form></section>
+    </main>
+    <footer class="footer"><a class="brand brand--footer" href="#inicio"><span class="brand__mark">N</span><span class="brand__name">Nido <em>de</em> Letras</span></a><p>© 2026 Nido de Letras. Hecho para quienes todavía se emocionan con una buena historia.</p><div><a href="#inicio">Instagram</a><a href="#inicio">Pinterest</a></div></footer>
+    <div class="search-modal" data-search-modal aria-hidden="true"><div class="search-modal__box"><button class="search-modal__close" aria-label="Cerrar búsqueda" data-search-close>×</button><p class="eyebrow">Encuentra tu próxima lectura</p><label for="search-input">Buscar</label><input id="search-input" type="search" placeholder="Título, autor o género..." /></div></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

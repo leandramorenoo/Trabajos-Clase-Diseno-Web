@@ -1,0 +1,51 @@
+/**table, tr, td {
+    border: solid;
+    padding: 3px;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 100%;
+    min-width: 400px;
+
+}
+
+.wrapper {
+    padding: 1rem;
+    overflow: scroll;
+    background-color: antiquewhite;
+}**/
+
+h1::before {
+    content: "→ ";
+    color: red;
+  
+}
+
+h1::after {
+    content: "";
+    color: red;
+    display: inline-block;
+    min-height: 2px;
+    background-color: red;
+    width: 100%;
+}
+
+/*
+PSEUDO CLASES
+:hover
+:target
+:active
+:selected
+
+PSEUDO ELEMENTO
+::first-letter
+::placeholder
+::checkmark
+::after
+::before
+*/
