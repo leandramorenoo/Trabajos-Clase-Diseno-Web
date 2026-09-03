@@ -36,7 +36,7 @@ if (num > 70) {
     console.log ('Eres un bebe')
 }
 
-/* Escribir if/else de manera corta if-> (?) else-> (:) */
+/* Escribir en terniario if/else de manera corta if-> (?) else-> (:) */
 
 let cantidad = 13
 let sacarCarnet = cantidad >= 18 ? true : false

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: beige;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+button.white {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: .7rem;
+}
+
+.menu {
+    position: fixed;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu.hidden {
+    display: none;
+}
