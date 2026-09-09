@@ -24,3 +24,24 @@ btnCrearTitulo.addEventListener('click', (e) => {
         inputTextoTitulo.placeholder = 'Rellena el título'
     }
 })
+
+/*
+// El boton que escuchara el evento de click y que creara un nuevo elemento adjudicado al contenedor
+const btnCreateElement = document.getElementById('createElement')
+// El recipiente en el que vamos a adjuntar el nuevo elemento
+const contenedorTitulo = document.getElementById('contenedorTitulo')
+const inputTitle = document.getElementById('title')
+
+btnCreateElement.addEventListener('click', () => {
+    if (inputTitle.value != '') {
+        const newElement = document.createElement('h1')
+        newElement.classList.add('mi-titulo')
+        newElement.innerText = inputTitle.value
+        contenedorTitulo.appendChild(newElement)
+    } else {
+        alert('Escribe el titulo')
+    } 
+})
+
+
+*/
