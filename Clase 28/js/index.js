@@ -25,7 +25,7 @@ alumnos.forEach((alumno) => {
 
 })*/
 
-const list = document.querySelectorAll('li')
+/*const list = document.querySelectorAll('li')
 console.log(list)
 
 list.forEach((item) => {
@@ -33,4 +33,17 @@ list.forEach((item) => {
 })
 
 
-let gallery = []
+
+let saludar = saludo => console.log(saludo)
+
+saludar('Hola')*/
+
+fetch('https://hp-api.onrender.com/api/characters')
+.then(response => response.json())
+.then(data => {
+    data.forEach(personaje => {
+        console.log(personaje.name)
+    })
+        
+    
+})

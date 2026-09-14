@@ -1,6 +1,7 @@
 const inputLink = document.getElementById('input')
 const btn = document.getElementById('boton')
 const containerGaleria = document.getElementById('contenedor')
+let gallery = []
 
 btn.addEventListener('click', (e) => {
 
@@ -8,11 +9,15 @@ btn.addEventListener('click', (e) => {
     
     console.log('click')
     if (inputLink.value != '') { // Revisar que el valor no esta vacio NO el obj
-        const newImage = document.createElement('img')
-        newImage.classList.add('gallery__image')// añ4adir clase
-        newImage.src = inputLink.value
+        gallery.unshift(inputLink.value)
 
-        containerGaleria.appendChild(newImage)
+        gallery.forEach((imgae) => {
+            const newImage = document.createElement('img')
+            newImage.classList.add('gallery__image')// añ4adir clase
+            newImage.src = inputLink.value
+
+            containerGaleria.appendChild(newImage)
+
+        })
     }
-
 })
