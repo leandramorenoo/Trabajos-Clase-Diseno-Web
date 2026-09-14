@@ -10,6 +10,10 @@ body {
     padding: 2rem;
 }
 
+img {
+    width: 100%;
+}
+
 .gallery {
    
     max-width: 1000px;
@@ -17,13 +21,15 @@ body {
     background-color: rgb(230, 240, 196);
     padding: 1rem;
     border-radius: 10px;
+
 }
 
-.gallery__header {
+.gallery__header form {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     gap: 2rem;
 }
+
 
 .button__gallery {
     border: none;
@@ -43,11 +49,19 @@ body {
     border: 1px solid #c3c494;
     border-radius: 5px;
     flex: 1;
-
 }
 
 .space__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
 }
