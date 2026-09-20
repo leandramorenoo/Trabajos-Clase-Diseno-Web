@@ -44,7 +44,7 @@ sliderNext.addEventListener('click', e => {
 })
 sliderBack.addEventListener('click', e => {
     if (count <= 0) {
-        count = slider.lenght - 1
+        count = slider.length - 1
     } else {
         count--
     }
