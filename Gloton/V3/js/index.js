@@ -8,17 +8,20 @@ const boton = document.getElementById('btn-subir-nivel')
 boton.style = 'display: none'
 
 // Creamos una variable para llevar el conteo de puntos, empezando en 0
-let conteoPuntos = 0 
+let conteoPuntos = localStorage.getItem('puntos') !=null ? localStorage.getItem('puntos') : 0
 // Creamos una variable que indica cuántos puntos se necesitan para el siguiente nivel
-let puntosNivel = 10
+let puntosNivel = localStorage.getItem('siguienteNivel') !=null ? localStorage.getItem('siguienteNivel') : 10
 // Creamos una variable para llevar el conteo del nivel, empezando en 1
-let nivel = 1
+let nivel = localStorage.getItem('nivel') !=null ? localStorage.getItem('nivel') : 1
 
+puntos.innerText = conteoPuntos
 // Creamos una función llamada "alimentar" que se ejecutará cuando se haga clic en el botón
+
 function alimentar () {
     // Verificamos si los puntos son menores al objetivo del siguiente nivel
     if ( conteoPuntos < puntosNivel){
         conteoPuntos++ // Incrementamos los puntos en 1 (sumamos 1 al valor actual)        
+        localStorage.setItem('puntos', conteoPuntos)
         puntos.innerText = conteoPuntos// Actualizamos el texto visible en el elemento "points" con el nuevo valor de puntos        
         boton.style = 'display: none'// Mantenemos oculto el botón de subir nivel mientras se alimenta
     }else {
@@ -30,12 +33,16 @@ function alimentar () {
   
 // Creamos una función llamada "subirNivel" que se ejecutará cuando se haga clic en el botón
  function subirNivel () {
-    nivel++ // Incrementamos el nivel en 1 (sumamos 1 al valor actual)  
+    nivel++ // Incrementamos el nivel en 1 (sumamos 1 al valor actual)
+    localStorage.setItem('nivel', nivel)  
     puntos.innerText = conteoPuntos// Actualizamos el texto visible en el elemento "points" con el valor actual de puntos    
     gloton.style = `font-size: calc(3rem + ${conteoPuntos}rem)` // Aumentamos el tamaño de la fuente del elemento "gloton" según los puntos acumulados    
     boton.style = 'display: none'// Ocultamos nuevamente el botón de subir nivel    
     puntosNivel+=10 // Aumentamos en 10 el objetivo de puntos para el siguiente nivel +=10
+    localStorage.setItem('siguienteNivel', puntosNivel)
  }      
+
+
 
 
     
