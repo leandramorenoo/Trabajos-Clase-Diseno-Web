@@ -7,36 +7,41 @@
     <title>Müller | Estudio de arquitectura</title>
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    <script defer src="js/index.js"></script>
     <link rel="icon" type="image/svg+xml" href="media/Logo/favicon.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+    
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+    <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--float">
         <div class="header__block block">
             <img class="header__logo" src="media/Logo/muller-arquitectos.svg" alt="">
             <nav class="header__nav">
                 <ul>
-                    <li><a class="link--nav" href="#" title="inicio">Inicio</a></li>
-                    <li><a class="link--nav" href="#" title="estudio">Estudio</a></li>
-                    <li><a class="link--nav" href="#" title="proyectos">Proyectos</a></li>
-                    <li><a class="link--nav" href="#" title="servicios">Servicios</a></li>
-                    <li><a class="link--nav" href="#" title="contacto">Contacto</a></li>
+                    <li><a class="link--nav" href="./" title="inicio">Inicio</a></li>
+                    <li><a class="link--nav" href="./estudio.html" title="estudio">Estudio</a></li>
+                    <li><a class="link--nav" href="./proyectos.html" title="proyectos">Proyectos</a></li>
+                    <li><a class="link--nav" href="./servicios.html" title="servicios">Servicios</a></li>
+                    <li><a class="link--nav" href="./contacto.html" title="contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero section">
+        <section class="hero section onScreenBg">
             <span class="hero__overlay"></span>
             <div class="hero__block block">
                 <span class="eyebrow">Estudio de arquitectura · Desde 1998</span>
-                <h1 class="heading--lg">Espacios que respiran, formas que perduran.</h1>
+                <h1 class="heading--lg onScreen">Espacios que respiran, formas que perduran.</h1>
             </div>
         </section>
 
         <!-- ESTUDIO -->
-        <section class="estudio section">
+        <section class="estudio section onAppear">
             <div class="estudio__block block">
                 <div class="estudio__left">
                     <span class="eyebrow">01 — Estudio</span>
@@ -44,7 +49,7 @@
                 </div>
 
                 <div class="estudio__right">
-                    <h2 class="heading--lg">Diseñamos lugares para ser habitados con calma.</h2>
+                    <h2 class="heading--lg onAppear">Diseñamos lugares para ser habitados con calma.</h2>
                     <p class="body">Fundado en 1998, nuestro estudio aborda cada proyecto desde una mirada sensible al
                         contexto, al material y a la luz. Creemos en la arquitectura como un acto silencioso que
                         transforma la experiencia cotidiana.</p>
@@ -72,7 +77,7 @@
         <!-- /ESTUDIO -->
 
         <!-- PROYECTOS -->
-        <section class="proyectos section">
+        <section class="proyectos section onAppear">
             <div class="proyectos__block block">
                 <div class="proyectos__head">
                     <div class="proyectos__title">
@@ -93,7 +98,8 @@
 
                     <!-- Casa Lumen -->
                     <div class="proyectos__card">
-                        <img src="media/JPG/proyecto-casa-lumen.jpg" alt="Proyectos - Casa Lumen" class="proyectos__image">
+                        <img src="media/JPG/proyecto-casa-lumen.jpg" alt="Proyectos - Casa Lumen"
+                            class="proyectos__image">
                         <div class="proyectos__info">
                             <div class="proyectos__category">
                                 <span class="eyebrow">Residencial · 2024</span>
@@ -108,7 +114,8 @@
 
                     <!-- Pabellón Hórreo -->
                     <div class="proyectos__card">
-                        <img src="media/JPG/proyecto-pabellon-horreo.jpg" alt="Proyectos - Pabellón Hórreo" class="proyectos__image">
+                        <img src="media/JPG/proyecto-pabellon-horreo.jpg" alt="Proyectos - Pabellón Hórreo"
+                            class="proyectos__image">
                         <div class="proyectos__info">
                             <div class="proyectos__category">
                                 <span class="eyebrow">Cultural · 2023</span>
@@ -123,7 +130,8 @@
 
                     <!-- Edificio Marés -->
                     <div class="proyectos__card">
-                        <img src="media/JPG/proyecto-edicio-mares.jpg" alt="Proyectos - Edificio Marés" class="proyectos__image">
+                        <img src="media/JPG/proyecto-edicio-mares.jpg" alt="Proyectos - Edificio Marés"
+                            class="proyectos__image">
                         <div class="proyectos__info">
                             <div class="proyectos__category">
                                 <span class="eyebrow">Comercial · 2023</span>
@@ -138,7 +146,8 @@
 
                     <!-- Villa Sereno -->
                     <div class="proyectos__card">
-                        <img src="media/JPG/proyecto-villa-sereno.jpg" alt="Proyectos - Villa Sereno" class="proyectos__image">
+                        <img src="media/JPG/proyecto-villa-sereno.jpg" alt="Proyectos - Villa Sereno"
+                            class="proyectos__image">
                         <div class="proyectos__info">
                             <div class="proyectos__category">
                                 <span class="eyebrow">Residencial · 2022</span>
@@ -150,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="proyectos__footer">
                     <a class="link" href="proyectos.html">
@@ -164,7 +173,7 @@
 
         <!-- SERVICIOS -->
 
-        <section class="servicios section">
+        <section class="servicios section onAppear">
             <div class="servicio__block block">
                 <div class="servicios__head">
                     <span class="eyebrow">03 — Servicios</span>
@@ -175,25 +184,29 @@
                     <div class="servicios__card">
                         <span class="eyebrow">I</span>
                         <h3 class="heading__sm">Arquitectura</h3>
-                        <p class="body">Proyectos residenciales, culturales y comerciales con una aproximación contextual y atemporal.</p>
+                        <p class="body">Proyectos residenciales, culturales y comerciales con una aproximación
+                            contextual y atemporal.</p>
                     </div>
 
                     <div class="servicios__card">
                         <span class="eyebrow">II</span>
                         <h3 class="heading__sm">Interiorismo</h3>
-                        <p class="body">Diseño de interiores donde la materialidad, la luz y la proporción dialogan con el habitante.</p>
+                        <p class="body">Diseño de interiores donde la materialidad, la luz y la proporción dialogan con
+                            el habitante.</p>
                     </div>
 
                     <div class="servicios__card">
                         <span class="eyebrow">III</span>
                         <h3 class="heading__sm">Urbanismo</h3>
-                        <p class="body">Planeamiento y diseño de espacios públicos que tejen ciudad desde la escala humana.</p>
+                        <p class="body">Planeamiento y diseño de espacios públicos que tejen ciudad desde la escala
+                            humana.</p>
                     </div>
 
                     <div class="servicios__card">
                         <span class="eyebrow">IV</span>
                         <h3 class="heading__sm">Consultoría</h3>
-                        <p class="body">Asesoramiento técnico, sostenibilidad y dirección de obra para promotores e instituciones.</p>
+                        <p class="body">Asesoramiento técnico, sostenibilidad y dirección de obra para promotores e
+                            instituciones.</p>
                     </div>
                 </div>
             </div>
@@ -205,9 +218,47 @@
 
     <footer class="footer section">
         <div class="footer_block block">
+            <div class="footer__title">
+                <h2 class="heading--xl">¿Tienes un proyecto en mente?</h2>
+                <a href="mailto:hola@muller-arquitectos.com" class="link link--big"
+                    title="hola@muller-arquitectos.com">hola@muller-arquitectos.com<i
+                        class="ri-arrow-right-up-line"></i></a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__column">
+                    <h3 class="eyebrow">Madrid</h3>
+                    <ul>
+                        <li><a class="body" href="#">Calle Serrano 42, 3º</a></li>
+                        <li><a class="body" href="#">28001 Madrid, España</a></li>
+                        <li><a class="body" href="tel:+34914238721">+34 91 423 87 21</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer__column">
+                    <h3 class="eyebrow">Lisboa</h3>
+                    <ul>
+                        <li><a class="body" href="#">Rua do Século 118</a></li>
+                        <li><a class="body" href="#">1200-435 Lisboa, Portugal</a></li>
+                        <li><a class="body" href="tel:+351213470265">+351 21 347 02 65</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="eyebrow">Siguenos</h3>
+                    <ul>
+                        <li><a class="body" target="_blank" href="#">Instagram</a></li>
+                        <li><a class="body" target="_blank" href="#">LinkedIn</a></li>
+                        <li><a class="body" target="_blank" href="#">Behance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__foot">
+                <span class="eyebrow">© 2026 Müller Arquitectos</span>
+                <span class="eyebrow">Diseñado con cuidado</span>
+            </div>
         </div>
     </footer>
+
 </body>
 
 </html>

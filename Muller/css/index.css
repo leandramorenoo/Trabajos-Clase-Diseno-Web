@@ -1,5 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Animations */
+@keyframes onScreen {
+    from { 
+        opacity: 0; 
+        filter: blur(20px);
+    }
+    to {
+        opacity:100%;
+    }
+}
+
+@keyframes onScreenBg {
+    from { 
+        background-size: 120%;
+    }
+    to {
+        background-size: 140%;
+    }
+}
+
+@keyframes appear {
+    from { 
+        opacity: 0; 
+        filter: blur(10px);
+        transform: translateY(1rem);
+    }
+    to {
+        opacity:100%;
+        transform: translateY(0rem);
+    }
+}
+
+.onScreen {
+    animation-name: onScreen;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,1,.07,.98);
+}
+
+.onScreenBg {
+    animation-name: onScreenBg;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+}
+
+.onAppear .block h1,
+.onAppear .block h2,
+.onAppear .block h3,
+.onAppear .block h4,
+.onAppear .block h5,
+.onAppear .block button,
+.onAppear .block span,
+.onAppear .block p,
+.onAppear .block a,
+.onAppear .block img {
+    animation-name: appear;
+    animation-timeline: view(block 90% 0%);
+    animation-timing-function: linear;
+}
+
+/* /Animations */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -120,6 +181,11 @@ button {
     padding-bottom: var(--space-xs);
     border-bottom: solid 1px var(--neutral-900);
     color: var(--neutral-900);
+
+    &.link--big {
+       font: var(--heading-sm);
+       text-transform: none;
+    }
 }
 
 .link--nav {
@@ -161,16 +227,19 @@ button {
 
 /* ------------- MAQUETACIÓN -------------*/
 
-/* Header */
+/* ---- PÁGINA INICIO ---- */
 
+/* Header */
 .header {
     background-color: rgba(255,255,255,0.8);
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-
     width: 100%;
+
+    &.header--float {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
 }
 .header__block {
     display: flex;
@@ -290,7 +359,6 @@ button {
 
     flex: 1 1 320px;
 }
-
 /*/ Estudio */
 
 /* Proyectos */
@@ -322,7 +390,6 @@ button {
         }
     }
 }
-
 
 .proyectos__grid {
     padding: var(--space-xl) 0;
@@ -382,7 +449,7 @@ button {
 
 /* /Proyectos /
 
-/* servicios */
+/* Servicios */
 .servicios {
 
 }
@@ -422,5 +489,115 @@ button {
 
 }
 
-
 /* /Servicios  */
+
+/* Footer */
+
+.footer {
+    background-color: var(--neutral-950);
+    color: var(--white);
+
+    &.section {
+        padding-bottom: var(--space-lg);
+    }
+
+    & a {
+        color: inherit;
+        border-color: var(--neutral-700);
+    }
+}
+.footer_block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+
+}
+.footer__title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    align-items: start;
+}
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-lg) 0 0 0;
+    border-top: 1px solid var(--neutral-700);
+}
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    color: var(--neutral-300);
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs)
+    }
+}
+
+.footer__foot{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-lg) 0 0 0;
+    border-top: 1px solid var(--neutral-700);
+}
+
+/* /Footer */
+/* ---- /PÁGINA INICIO ---- */
+
+/* ---- PÁGINA ESTUDIO ---- */
+
+/* Banner */
+
+.estudio-banner__block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+.estudio-banner__title {
+    display: flex;
+    gap: var(--space-lg);
+
+    & h1 {
+        margin-top: -1rem;
+    }
+}
+.estudio-banner__image {
+    & img {
+        width: 100%;
+    }
+}
+
+/* /Banner */
+
+/* Manifiesto */
+.manifiesto {
+    border-top: 1px solid var(--neutral-200);
+}
+.manifiesto__block {
+    display: flex;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+
+}
+.manifiesto__title {
+    flex: 1 1 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+
+}
+.manifiesto__content {
+    flex: 1 1 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+
+}
+/* /Manifiesto */
